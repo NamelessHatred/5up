@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище ARGHModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Animals">
+    <Key>
+      <PropertyRef Name="ID_Animals" />
+    </Key>
+    <Property Name="ID_Animals" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WType" Type="varchar" MaxLength="30" />
+    <Property Name="HowMuch" Type="int" />
+  </EntityType>
+  <EntityType Name="BIRDS">
+    <Key>
+      <PropertyRef Name="ID_Birds" />
+    </Key>
+    <Property Name="ID_Birds" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BirdName" Type="varchar" MaxLength="30" />
+    <Property Name="BirdAge" Type="int" />
+    <Property Name="BirdColor" Type="varchar" MaxLength="30" />
+    <Property Name="BirdType" Type="varchar" MaxLength="30" />
+    <Property Name="Typey_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BuyMoments">
+    <Key>
+      <PropertyRef Name="ID_BuyMomnets" />
+    </Key>
+    <Property Name="ID_BuyMomnets" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Food_ID" Type="int" Nullable="false" />
+    <Property Name="Tools_ID" Type="int" Nullable="false" />
+    <Property Name="LivePointsForWorkers_ID" Type="int" Nullable="false" />
+    <Property Name="Animals_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CATS">
+    <Key>
+      <PropertyRef Name="ID_Cats" />
+    </Key>
+    <Property Name="ID_Cats" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CatName" Type="varchar" MaxLength="30" />
+    <Property Name="CatAge" Type="int" />
+    <Property Name="CatColor" Type="varchar" MaxLength="30" />
+    <Property Name="CatType" Type="varchar" MaxLength="30" />
+    <Property Name="Typey_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CLIENTS">
+    <Key>
+      <PropertyRef Name="ID_CLIENTS" />
+    </Key>
+    <Property Name="ID_CLIENTS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientName" Type="varchar" MaxLength="30" />
+    <Property Name="ClientSureName" Type="varchar" MaxLength="30" />
+    <Property Name="ClientFather" Type="varchar" MaxLength="30" />
+    <Property Name="ClientMail" Type="varchar" MaxLength="30" />
+    <Property Name="ClientBuyNumber" Type="int" />
+  </EntityType>
+  <EntityType Name="DOGS">
+    <Key>
+      <PropertyRef Name="ID_Dogs" />
+    </Key>
+    <Property Name="ID_Dogs" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DogName" Type="varchar" MaxLength="30" />
+    <Property Name="DogAge" Type="int" />
+    <Property Name="DogColor" Type="varchar" MaxLength="30" />
+    <Property Name="DogType" Type="varchar" MaxLength="30" />
+    <Property Name="Typey_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FOOD">
+    <Key>
+      <PropertyRef Name="ID_FOOD" />
+    </Key>
+    <Property Name="ID_FOOD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FoodName" Type="varchar" MaxLength="30" />
+    <Property Name="FoodType" Type="varchar" MaxLength="30" />
+    <Property Name="HowMuch" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="FROGS">
+    <Key>
+      <PropertyRef Name="ID_Frogs" />
+    </Key>
+    <Property Name="ID_Frogs" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FrogName" Type="varchar" MaxLength="30" />
+    <Property Name="FrogAge" Type="int" />
+    <Property Name="FrogColor" Type="varchar" MaxLength="30" />
+    <Property Name="FrogType" Type="varchar" MaxLength="30" />
+    <Property Name="Typey_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LivePointsForWorkers">
+    <Key>
+      <PropertyRef Name="ID_LivePointsForWorkers" />
+    </Key>
+    <Property Name="ID_LivePointsForWorkers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LivePointLocation" Type="varchar" MaxLength="30" />
+    <Property Name="HowMuchComfrotable" Type="int" />
+    <Property Name="FoodAtLeast" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID_Orders" />
+    </Key>
+    <Property Name="ID_Orders" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderData" Type="varchar" MaxLength="30" />
+    <Property Name="HowManyAnimals" Type="int" />
+    <Property Name="TypeOfAnimal" Type="varchar" MaxLength="30" />
+    <Property Name="SterilizationOrCastrationNeed" Type="varchar" MaxLength="30" />
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+    <Property Name="Points_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Points">
+    <Key>
+      <PropertyRef Name="ID_Points" />
+    </Key>
+    <Property Name="ID_Points" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WLocation" Type="varchar" MaxLength="30" />
+    <Property Name="Clients_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RATS">
+    <Key>
+      <PropertyRef Name="ID_Rats" />
+    </Key>
+    <Property Name="ID_Rats" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RatName" Type="varchar" MaxLength="30" />
+    <Property Name="RatAge" Type="int" />
+    <Property Name="RatColor" Type="varchar" MaxLength="30" />
+    <Property Name="RatType" Type="varchar" MaxLength="30" />
+    <Property Name="Typey_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TOOLS">
+    <Key>
+      <PropertyRef Name="ID_TOOL" />
+    </Key>
+    <Property Name="ID_TOOL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ToolName" Type="varchar" MaxLength="30" />
+    <Property Name="ToolType" Type="varchar" MaxLength="30" />
+    <Property Name="HowMuchTool" Type="int" />
+  </EntityType>
+  <EntityType Name="Workers">
+    <Key>
+      <PropertyRef Name="ID_Workers" />
+    </Key>
+    <Property Name="ID_Workers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkName" Type="varchar" MaxLength="30" />
+    <Property Name="WorkSureName" Type="varchar" MaxLength="30" />
+    <Property Name="WorkMiddleName" Type="varchar" MaxLength="30" />
+    <Property Name="WorkMail" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="WorkLivePoint_ID" Type="int" Nullable="false" />
+    <Property Name="Points_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__BIRDS__Typey_ID__4222D4EF">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+    <End Role="BIRDS" Type="Self.BIRDS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID_Animals" />
+      </Principal>
+      <Dependent Role="BIRDS">
+        <PropertyRef Name="Typey_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BuyMoment__Anima__5070F446">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+    <End Role="BuyMoments" Type="Self.BuyMoments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID_Animals" />
+      </Principal>
+      <Dependent Role="BuyMoments">
+        <PropertyRef Name="Animals_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BuyMoment__Food___4D94879B">
+    <End Role="FOOD" Type="Self.FOOD" Multiplicity="1" />
+    <End Role="BuyMoments" Type="Self.BuyMoments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FOOD">
+        <PropertyRef Name="ID_FOOD" />
+      </Principal>
+      <Dependent Role="BuyMoments">
+        <PropertyRef Name="Food_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BuyMoment__LiveP__4F7CD00D">
+    <End Role="LivePointsForWorkers" Type="Self.LivePointsForWorkers" Multiplicity="1" />
+    <End Role="BuyMoments" Type="Self.BuyMoments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LivePointsForWorkers">
+        <PropertyRef Name="ID_LivePointsForWorkers" />
+      </Principal>
+      <Dependent Role="BuyMoments">
+        <PropertyRef Name="LivePointsForWorkers_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BuyMoment__Tools__4E88ABD4">
+    <End Role="TOOLS" Type="Self.TOOLS" Multiplicity="1" />
+    <End Role="BuyMoments" Type="Self.BuyMoments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOOLS">
+        <PropertyRef Name="ID_TOOL" />
+      </Principal>
+      <Dependent Role="BuyMoments">
+        <PropertyRef Name="Tools_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CATS__Typey_ID__398D8EEE">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+    <End Role="CATS" Type="Self.CATS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID_Animals" />
+      </Principal>
+      <Dependent Role="CATS">
+        <PropertyRef Name="Typey_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DOGS__Typey_ID__3C69FB99">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+    <End Role="DOGS" Type="Self.DOGS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID_Animals" />
+      </Principal>
+      <Dependent Role="DOGS">
+        <PropertyRef Name="Typey_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__FROGS__Typey_ID__44FF419A">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+    <End Role="FROGS" Type="Self.FROGS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID_Animals" />
+      </Principal>
+      <Dependent Role="FROGS">
+        <PropertyRef Name="Typey_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Client_I__5812160E">
+    <End Role="CLIENTS" Type="Self.CLIENTS" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTS">
+        <PropertyRef Name="ID_CLIENTS" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__Points_I__59063A47">
+    <End Role="Points" Type="Self.Points" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Points">
+        <PropertyRef Name="ID_Points" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Points_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Points__Clients___5535A963">
+    <End Role="CLIENTS" Type="Self.CLIENTS" Multiplicity="1" />
+    <End Role="Points" Type="Self.Points" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTS">
+        <PropertyRef Name="ID_CLIENTS" />
+      </Principal>
+      <Dependent Role="Points">
+        <PropertyRef Name="Clients_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RATS__Typey_ID__3F466844">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="1" />
+    <End Role="RATS" Type="Self.RATS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID_Animals" />
+      </Principal>
+      <Dependent Role="RATS">
+        <PropertyRef Name="Typey_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Workers__Points___5CD6CB2B">
+    <End Role="Points" Type="Self.Points" Multiplicity="1" />
+    <End Role="Workers" Type="Self.Workers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Points">
+        <PropertyRef Name="ID_Points" />
+      </Principal>
+      <Dependent Role="Workers">
+        <PropertyRef Name="Points_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Workers__WorkLiv__5BE2A6F2">
+    <End Role="LivePointsForWorkers" Type="Self.LivePointsForWorkers" Multiplicity="1" />
+    <End Role="Workers" Type="Self.Workers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LivePointsForWorkers">
+        <PropertyRef Name="ID_LivePointsForWorkers" />
+      </Principal>
+      <Dependent Role="Workers">
+        <PropertyRef Name="WorkLivePoint_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище ARGHModelContainer">
+    <EntitySet Name="Animals" EntityType="Self.Animals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BIRDS" EntityType="Self.BIRDS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BuyMoments" EntityType="Self.BuyMoments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CATS" EntityType="Self.CATS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CLIENTS" EntityType="Self.CLIENTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DOGS" EntityType="Self.DOGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FOOD" EntityType="Self.FOOD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FROGS" EntityType="Self.FROGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LivePointsForWorkers" EntityType="Self.LivePointsForWorkers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Points" EntityType="Self.Points" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RATS" EntityType="Self.RATS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TOOLS" EntityType="Self.TOOLS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Workers" EntityType="Self.Workers" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BIRDS__Typey_ID__4222D4EF" Association="Self.FK__BIRDS__Typey_ID__4222D4EF">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="BIRDS" EntitySet="BIRDS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BuyMoment__Anima__5070F446" Association="Self.FK__BuyMoment__Anima__5070F446">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="BuyMoments" EntitySet="BuyMoments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BuyMoment__Food___4D94879B" Association="Self.FK__BuyMoment__Food___4D94879B">
+      <End Role="FOOD" EntitySet="FOOD" />
+      <End Role="BuyMoments" EntitySet="BuyMoments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BuyMoment__LiveP__4F7CD00D" Association="Self.FK__BuyMoment__LiveP__4F7CD00D">
+      <End Role="LivePointsForWorkers" EntitySet="LivePointsForWorkers" />
+      <End Role="BuyMoments" EntitySet="BuyMoments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BuyMoment__Tools__4E88ABD4" Association="Self.FK__BuyMoment__Tools__4E88ABD4">
+      <End Role="TOOLS" EntitySet="TOOLS" />
+      <End Role="BuyMoments" EntitySet="BuyMoments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CATS__Typey_ID__398D8EEE" Association="Self.FK__CATS__Typey_ID__398D8EEE">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="CATS" EntitySet="CATS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DOGS__Typey_ID__3C69FB99" Association="Self.FK__DOGS__Typey_ID__3C69FB99">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="DOGS" EntitySet="DOGS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__FROGS__Typey_ID__44FF419A" Association="Self.FK__FROGS__Typey_ID__44FF419A">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="FROGS" EntitySet="FROGS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Client_I__5812160E" Association="Self.FK__Orders__Client_I__5812160E">
+      <End Role="CLIENTS" EntitySet="CLIENTS" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__Points_I__59063A47" Association="Self.FK__Orders__Points_I__59063A47">
+      <End Role="Points" EntitySet="Points" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Points__Clients___5535A963" Association="Self.FK__Points__Clients___5535A963">
+      <End Role="CLIENTS" EntitySet="CLIENTS" />
+      <End Role="Points" EntitySet="Points" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RATS__Typey_ID__3F466844" Association="Self.FK__RATS__Typey_ID__3F466844">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="RATS" EntitySet="RATS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Workers__Points___5CD6CB2B" Association="Self.FK__Workers__Points___5CD6CB2B">
+      <End Role="Points" EntitySet="Points" />
+      <End Role="Workers" EntitySet="Workers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Workers__WorkLiv__5BE2A6F2" Association="Self.FK__Workers__WorkLiv__5BE2A6F2">
+      <End Role="LivePointsForWorkers" EntitySet="LivePointsForWorkers" />
+      <End Role="Workers" EntitySet="Workers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

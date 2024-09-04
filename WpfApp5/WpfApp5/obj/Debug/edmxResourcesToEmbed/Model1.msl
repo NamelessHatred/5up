@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ARGHModelContainer" CdmEntityContainer="ARGHEntities">
+    <EntitySetMapping Name="Animals">
+      <EntityTypeMapping TypeName="ARGHModel.Animals">
+        <MappingFragment StoreEntitySet="Animals">
+          <ScalarProperty Name="ID_Animals" ColumnName="ID_Animals" />
+          <ScalarProperty Name="WType" ColumnName="WType" />
+          <ScalarProperty Name="HowMuch" ColumnName="HowMuch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BIRDS">
+      <EntityTypeMapping TypeName="ARGHModel.BIRDS">
+        <MappingFragment StoreEntitySet="BIRDS">
+          <ScalarProperty Name="ID_Birds" ColumnName="ID_Birds" />
+          <ScalarProperty Name="BirdName" ColumnName="BirdName" />
+          <ScalarProperty Name="BirdAge" ColumnName="BirdAge" />
+          <ScalarProperty Name="BirdColor" ColumnName="BirdColor" />
+          <ScalarProperty Name="BirdType" ColumnName="BirdType" />
+          <ScalarProperty Name="Typey_ID" ColumnName="Typey_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BuyMoments">
+      <EntityTypeMapping TypeName="ARGHModel.BuyMoments">
+        <MappingFragment StoreEntitySet="BuyMoments">
+          <ScalarProperty Name="ID_BuyMomnets" ColumnName="ID_BuyMomnets" />
+          <ScalarProperty Name="Food_ID" ColumnName="Food_ID" />
+          <ScalarProperty Name="Tools_ID" ColumnName="Tools_ID" />
+          <ScalarProperty Name="LivePointsForWorkers_ID" ColumnName="LivePointsForWorkers_ID" />
+          <ScalarProperty Name="Animals_ID" ColumnName="Animals_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CATS">
+      <EntityTypeMapping TypeName="ARGHModel.CATS">
+        <MappingFragment StoreEntitySet="CATS">
+          <ScalarProperty Name="ID_Cats" ColumnName="ID_Cats" />
+          <ScalarProperty Name="CatName" ColumnName="CatName" />
+          <ScalarProperty Name="CatAge" ColumnName="CatAge" />
+          <ScalarProperty Name="CatColor" ColumnName="CatColor" />
+          <ScalarProperty Name="CatType" ColumnName="CatType" />
+          <ScalarProperty Name="Typey_ID" ColumnName="Typey_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTS">
+      <EntityTypeMapping TypeName="ARGHModel.CLIENTS">
+        <MappingFragment StoreEntitySet="CLIENTS">
+          <ScalarProperty Name="ID_CLIENTS" ColumnName="ID_CLIENTS" />
+          <ScalarProperty Name="ClientName" ColumnName="ClientName" />
+          <ScalarProperty Name="ClientSureName" ColumnName="ClientSureName" />
+          <ScalarProperty Name="ClientFather" ColumnName="ClientFather" />
+          <ScalarProperty Name="ClientMail" ColumnName="ClientMail" />
+          <ScalarProperty Name="ClientBuyNumber" ColumnName="ClientBuyNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOGS">
+      <EntityTypeMapping TypeName="ARGHModel.DOGS">
+        <MappingFragment StoreEntitySet="DOGS">
+          <ScalarProperty Name="ID_Dogs" ColumnName="ID_Dogs" />
+          <ScalarProperty Name="DogName" ColumnName="DogName" />
+          <ScalarProperty Name="DogAge" ColumnName="DogAge" />
+          <ScalarProperty Name="DogColor" ColumnName="DogColor" />
+          <ScalarProperty Name="DogType" ColumnName="DogType" />
+          <ScalarProperty Name="Typey_ID" ColumnName="Typey_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FOOD">
+      <EntityTypeMapping TypeName="ARGHModel.FOOD">
+        <MappingFragment StoreEntitySet="FOOD">
+          <ScalarProperty Name="ID_FOOD" ColumnName="ID_FOOD" />
+          <ScalarProperty Name="FoodName" ColumnName="FoodName" />
+          <ScalarProperty Name="FoodType" ColumnName="FoodType" />
+          <ScalarProperty Name="HowMuch" ColumnName="HowMuch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FROGS">
+      <EntityTypeMapping TypeName="ARGHModel.FROGS">
+        <MappingFragment StoreEntitySet="FROGS">
+          <ScalarProperty Name="ID_Frogs" ColumnName="ID_Frogs" />
+          <ScalarProperty Name="FrogName" ColumnName="FrogName" />
+          <ScalarProperty Name="FrogAge" ColumnName="FrogAge" />
+          <ScalarProperty Name="FrogColor" ColumnName="FrogColor" />
+          <ScalarProperty Name="FrogType" ColumnName="FrogType" />
+          <ScalarProperty Name="Typey_ID" ColumnName="Typey_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LivePointsForWorkers">
+      <EntityTypeMapping TypeName="ARGHModel.LivePointsForWorkers">
+        <MappingFragment StoreEntitySet="LivePointsForWorkers">
+          <ScalarProperty Name="ID_LivePointsForWorkers" ColumnName="ID_LivePointsForWorkers" />
+          <ScalarProperty Name="LivePointLocation" ColumnName="LivePointLocation" />
+          <ScalarProperty Name="HowMuchComfrotable" ColumnName="HowMuchComfrotable" />
+          <ScalarProperty Name="FoodAtLeast" ColumnName="FoodAtLeast" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ARGHModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Orders" ColumnName="ID_Orders" />
+          <ScalarProperty Name="OrderData" ColumnName="OrderData" />
+          <ScalarProperty Name="HowManyAnimals" ColumnName="HowManyAnimals" />
+          <ScalarProperty Name="TypeOfAnimal" ColumnName="TypeOfAnimal" />
+          <ScalarProperty Name="SterilizationOrCastrationNeed" ColumnName="SterilizationOrCastrationNeed" />
+          <ScalarProperty Name="Client_ID" ColumnName="Client_ID" />
+          <ScalarProperty Name="Points_ID" ColumnName="Points_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Points">
+      <EntityTypeMapping TypeName="ARGHModel.Points">
+        <MappingFragment StoreEntitySet="Points">
+          <ScalarProperty Name="ID_Points" ColumnName="ID_Points" />
+          <ScalarProperty Name="WLocation" ColumnName="WLocation" />
+          <ScalarProperty Name="Clients_ID" ColumnName="Clients_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RATS">
+      <EntityTypeMapping TypeName="ARGHModel.RATS">
+        <MappingFragment StoreEntitySet="RATS">
+          <ScalarProperty Name="ID_Rats" ColumnName="ID_Rats" />
+          <ScalarProperty Name="RatName" ColumnName="RatName" />
+          <ScalarProperty Name="RatAge" ColumnName="RatAge" />
+          <ScalarProperty Name="RatColor" ColumnName="RatColor" />
+          <ScalarProperty Name="RatType" ColumnName="RatType" />
+          <ScalarProperty Name="Typey_ID" ColumnName="Typey_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOOLS">
+      <EntityTypeMapping TypeName="ARGHModel.TOOLS">
+        <MappingFragment StoreEntitySet="TOOLS">
+          <ScalarProperty Name="ID_TOOL" ColumnName="ID_TOOL" />
+          <ScalarProperty Name="ToolName" ColumnName="ToolName" />
+          <ScalarProperty Name="ToolType" ColumnName="ToolType" />
+          <ScalarProperty Name="HowMuchTool" ColumnName="HowMuchTool" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workers">
+      <EntityTypeMapping TypeName="ARGHModel.Workers">
+        <MappingFragment StoreEntitySet="Workers">
+          <ScalarProperty Name="ID_Workers" ColumnName="ID_Workers" />
+          <ScalarProperty Name="WorkName" ColumnName="WorkName" />
+          <ScalarProperty Name="WorkSureName" ColumnName="WorkSureName" />
+          <ScalarProperty Name="WorkMiddleName" ColumnName="WorkMiddleName" />
+          <ScalarProperty Name="WorkMail" ColumnName="WorkMail" />
+          <ScalarProperty Name="WorkLivePoint_ID" ColumnName="WorkLivePoint_ID" />
+          <ScalarProperty Name="Points_ID" ColumnName="Points_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

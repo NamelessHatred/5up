@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a028fd770d4e4cd397dddb659b3eb6cd" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="ARGHModel.Animals" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.BIRDS" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.BuyMoments" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.CATS" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.CLIENTS" Width="1.5" PointX="5.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.DOGS" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.FOOD" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.FROGS" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.LivePointsForWorkers" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.Orders" Width="1.5" PointX="10.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.Points" Width="1.5" PointX="8" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.RATS" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.TOOLS" Width="1.5" PointX="10.125" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.Workers" Width="1.5" PointX="10.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="ARGHModel.FK__BIRDS__Typey_ID__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__BuyMoment__Anima__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__CATS__Typey_ID__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__DOGS__Typey_ID__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__FROGS__Typey_ID__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__RATS__Typey_ID__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__BuyMoment__Food___4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__BuyMoment__LiveP__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__BuyMoment__Tools__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__Orders__Client_I__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__Points__Clients___5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__Workers__WorkLiv__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__Orders__Points_I__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="ARGHModel.FK__Workers__Points___5CD6CB2B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
