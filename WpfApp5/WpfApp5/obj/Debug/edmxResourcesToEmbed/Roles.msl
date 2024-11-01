@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище FORGODSAKEModelContainer" CdmEntityContainer="FORGODSAKEEntities">
+    <EntitySetMapping Name="LoginGORE">
+      <EntityTypeMapping TypeName="FORGODSAKEModel.LoginGORE">
+        <MappingFragment StoreEntitySet="LoginGORE">
+          <ScalarProperty Name="ID_LoginGORE" ColumnName="ID_LoginGORE" />
+          <ScalarProperty Name="GORELogin" ColumnName="GORELogin" />
+          <ScalarProperty Name="GOREPassword" ColumnName="GOREPassword" />
+          <ScalarProperty Name="GORERoleId" ColumnName="GORERoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rolee">
+      <EntityTypeMapping TypeName="FORGODSAKEModel.Rolee">
+        <MappingFragment StoreEntitySet="Rolee">
+          <ScalarProperty Name="ID_Rolee" ColumnName="ID_Rolee" />
+          <ScalarProperty Name="CName" ColumnName="CName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

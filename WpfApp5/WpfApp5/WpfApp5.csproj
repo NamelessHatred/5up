@@ -67,6 +67,11 @@
     <Compile Include="Animals.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ARGHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ARGHDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BIRDS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -96,6 +101,9 @@
     <Compile Include="LivePointsForWorkers.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="LoginGORE.cs">
+      <DependentUpon>Roles.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,14 +128,71 @@
     <Compile Include="RATS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Rolee.cs">
+      <DependentUpon>Roles.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Roles.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Roles.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Roles.edmx</DependentUpon>
+    </Compile>
     <Compile Include="SecondRoleWindow.xaml.cs">
       <DependentUpon>SecondRoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="swagwindow.xaml.cs">
+      <DependentUpon>swagwindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="TOOLS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window10.xaml.cs">
+      <DependentUpon>Window10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window11.xaml.cs">
+      <DependentUpon>Window11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window12.xaml.cs">
+      <DependentUpon>Window12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window13.xaml.cs">
+      <DependentUpon>Window13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window5.xaml.cs">
+      <DependentUpon>Window5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window6.xaml.cs">
+      <DependentUpon>Window6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window7.xaml.cs">
+      <DependentUpon>Window7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window8.xaml.cs">
+      <DependentUpon>Window8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window9.xaml.cs">
+      <DependentUpon>Window9.xaml</DependentUpon>
     </Compile>
     <Compile Include="Workers.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -144,11 +209,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ARGHDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ARGHDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FirstRoleWindow.xaml.cs">
       <DependentUpon>FirstRoleWindow.xaml</DependentUpon>
     </Compile>
@@ -160,7 +220,59 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="swagwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window12.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window13.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window9.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,6 +295,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="ARGHDataSet.xsc">
       <DependentUpon>ARGHDataSet.xsd</DependentUpon>
     </None>
@@ -205,10 +321,6 @@
     <None Include="FORGODSAKEDataSet.xss">
       <DependentUpon>FORGODSAKEDataSet.xsd</DependentUpon>
     </None>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -216,6 +328,13 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="Roles.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Roles.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Roles.edmx.diagram">
+      <DependentUpon>Roles.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +350,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Roles.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Roles.edmx</DependentUpon>
+      <LastGenOutput>Roles.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Roles.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Roles.edmx</DependentUpon>
+      <LastGenOutput>Roles.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

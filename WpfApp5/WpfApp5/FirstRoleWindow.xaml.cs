@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using WpfApp5.ARGHDataSetTableAdapters;
 
 namespace WpfApp5
 {
@@ -47,30 +48,6 @@ namespace WpfApp5
                 MessageBox.Show("Вы что-то неправильно заполнили");
             }
         }
-
-        private void ch_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (Pla.SelectedItem != null)
-                {
-                    var selected = Pla.SelectedItem as CLIENTS;
-                    selected.ClientName = ClientName.Text;
-                    selected.ClientSureName = ClientSureName.Text;
-                    selected.ClientFather = ClientFather.Text;
-                    selected.ClientMail = ClientMail.Text;
-                    selected.ClientBuyNumber = Convert.ToInt32(BuyNumber.Text);
-                    lol.SaveChanges();
-                    Pla.ItemsSource = lol.CLIENTS.ToList();
-                }
-                else
-                {
-                    MessageBox.Show("нужно что-то выбрать");
-                }
-            }
-            catch { MessageBox.Show("Вы что-то неправильно заполнили"); }
-        }
-
         private void del_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -94,8 +71,8 @@ namespace WpfApp5
         }
         private void oleg_Click(object sender, RoutedEventArgs e)
         {
-            Window1 Window1 = new Window1();
-            Window1.Show();
+            swagwindow swagwindow = new swagwindow();
+            swagwindow.Show();
             Close();
 
         }
@@ -106,11 +83,11 @@ namespace WpfApp5
             if (selected != null)
             {
 
-                name.Text = selected.CNAME;
-                sure.Text = selected.CSURENAMENAME;
-                nick.Text = selected.CMIDDLENAME;
-                age.Text = Convert.ToString(selected.AGE);
-                email.Text = selected.EMAIL;
+                ClientName.Text = selected.ClientName;
+                ClientSureName.Text = selected.ClientSureName;
+                ClientFather.Text = selected.ClientFather;
+                ClientMail.Text = selected.ClientMail;
+                BuyNumber.Text = Convert.ToString(selected.ClientBuyNumber);
             }
         }
         private void name_PreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -123,6 +100,29 @@ namespace WpfApp5
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void ch_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (Pla.SelectedItem != null)
+                {
+                    var selected = Pla.SelectedItem as CLIENTS;
+                    selected.ClientName = ClientName.Text;
+                    selected.ClientSureName = ClientSureName.Text;
+                    selected.ClientFather = ClientFather.Text;
+                    selected.ClientMail = ClientMail.Text;
+                    selected.ClientBuyNumber = Convert.ToInt32(BuyNumber.Text);
+                    lol.SaveChanges();
+                    Pla.ItemsSource = lol.CLIENTS.ToList();
+                }
+                else
+                {
+                    MessageBox.Show("нужно что-то выбрать");
+                }
+            }
+            catch { }
         }
     }
 }

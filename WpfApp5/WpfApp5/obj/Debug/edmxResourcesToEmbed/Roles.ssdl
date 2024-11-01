@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище FORGODSAKEModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="LoginGORE">
+    <Key>
+      <PropertyRef Name="ID_LoginGORE" />
+    </Key>
+    <Property Name="ID_LoginGORE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GORELogin" Type="varchar" MaxLength="30" />
+    <Property Name="GOREPassword" Type="varchar" MaxLength="30" />
+    <Property Name="GORERoleId" Type="int" />
+  </EntityType>
+  <EntityType Name="Rolee">
+    <Key>
+      <PropertyRef Name="ID_Rolee" />
+    </Key>
+    <Property Name="ID_Rolee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CName" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="Хранилище FORGODSAKEModelContainer">
+    <EntitySet Name="LoginGORE" EntityType="Self.LoginGORE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rolee" EntityType="Self.Rolee" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

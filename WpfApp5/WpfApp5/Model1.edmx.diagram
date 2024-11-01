@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="a028fd770d4e4cd397dddb659b3eb6cd" Name="Diagram1" ZoomLevel="55">
+      <Diagram DiagramId="a028fd770d4e4cd397dddb659b3eb6cd" Name="Diagram1" ZoomLevel="134">
         <EntityTypeShape EntityType="ARGHModel.Animals" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.BIRDS" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.BuyMoments" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
@@ -13,8 +13,8 @@
         <EntityTypeShape EntityType="ARGHModel.DOGS" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.FOOD" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.FROGS" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ARGHModel.LivePointsForWorkers" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ARGHModel.Orders" Width="1.5" PointX="10.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.LivePointsForWorkers" Width="2.25" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ARGHModel.Orders" Width="2.625" PointX="10.25" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.Points" Width="1.5" PointX="8" PointY="6.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.RATS" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ARGHModel.TOOLS" Width="1.5" PointX="10.125" PointY="12" IsExpanded="true" />

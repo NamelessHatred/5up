@@ -42,12 +42,15 @@ namespace WpfApp5
                     switch (roleID)
                     {
                         case 1:
-                            FirstRoleWindow role = new FirstRoleWindow(); 
-                            role.Show();
+                            swagwindow swagwindow = new swagwindow(); 
+                            swagwindow.Show();
+                            Close();
                             break;
+
                         case 2:
                             SecondRoleWindow second = new SecondRoleWindow();
                             second.Show();
+                            Close();
                             break;
                     }
                 }

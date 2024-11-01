@@ -20,7 +20,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.ColumnSpan="5" x:Name="Pla" SelectedCellsChanged="Pla_SelectedCellsChanged" AutoGenerateColumns="False">
+        <DataGrid Grid.ColumnSpan="5" x:Name="Pla" SelectedCellsChanged="Pla_SelectedCellsChanged">
             <DataGrid.Columns>
             </DataGrid.Columns>
         </DataGrid>

@@ -7,6 +7,38 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.ColumnSpan="5" x:Name="Pla" SelectedCellsChanged="Pla_SelectedCellsChanged"/>
+
+            <Button x:Name="oleg" Grid.ColumnSpan="5" Content="Назад" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Click="oleg_Click"/>
+            <Button Content="добавить" Grid.Row="1" Click="add_Click" Margin="0,18,0,0" Grid.RowSpan="2"/>
+            <Button Content="изменить" Grid.ColumnSpan="1" Grid.Row="2" Grid.Column="2" VerticalAlignment="Top" Click="ch_Click"/>
+            <Button Content="удалить" Grid.Row="2" Grid.Column="4" VerticalAlignment="Top" Click="del_Click"/>
+            <Grid Grid.Row="1" Grid.ColumnSpan="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="name" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Grid.Row="1" PreviewTextInput="name_PreviewTextInput" />
+                <TextBox x:Name="age" TextWrapping="Wrap" Text="Возвраст" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" PreviewTextInput="age_PreviewTextInput"/>
+                <TextBox x:Name="color" TextWrapping="Wrap" Text="Цвет" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" PreviewTextInput="name_PreviewTextInput"/>
+                <TextBox x:Name="type" TextWrapping="Wrap" Text="Тип" VerticalAlignment="Top" Grid.Row="1" Grid.Column="3" PreviewTextInput="name_PreviewTextInput"/>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp5.swagwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="swagwindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Content="CLIENTS" x:Name="Clients" Click="Clients_Click"/>
+        <Button Grid.Row="1" Grid.Column="0" Content="CATS" x:Name="Cats" Click="Cats_Click"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="BuyMoments" x:Name="BuyMoments" Click="BuyMoments_Click"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="BIRDS" x:Name="Birds" Click="Birds_Click"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="DOGS" x:Name="Dogs" Click="Dogs_Click"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="Workers" x:Name="Workers" Click="Workers_Click"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="TOOLS" x:Name="Tools" Click="Tools_Click"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="RATS" x:Name="Rats" Click="Rats_Click"/>
+        <Button Grid.Row="0" Grid.Column="2" Content="Points" x:Name="Points" Click="Points_Click"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="Orders" x:Name="Orders" Click="Orders_Click"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="LivePointsForWorkers" x:Name="LivePointsForWorkers" Click="LivePointsForWorkers_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="FOOD" x:Name="Food" Click="Food_Click"/>
+        <Button Grid.Row="0" Grid.Column="3" Content="Frogs" x:Name="Frogs" Click="Frogs_Click"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="Animals" x:Name="Animals" Click="Animals_Click"/>
+    </Grid>
+</Window>
